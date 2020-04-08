@@ -1,0 +1,51 @@
+\documentclass{classeENS}
+\usepackage{lipsum}
+
+\title{Template rapport ENS } %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\titre{Développement et mise à niveau des outils Intranet} %Titre du fichier .pdf
+\departement{UFR Sciences et Techniques} 
+\matiere{Département d'informatique} 
+\motif{Stage -- 2ème année de Master en Informatique Ingénierie Systèmes et Logiciels }
+
+\enseignant{Louis-Claude \textsc{Canon}} %Nom de l'enseignant
+\tuteurpcp{Mickaël \textsc{Gros}}
+\eleves{Nathan \textsc{Piranda}} %Nom des élèves
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+\tabledefigure
+
+%------------ Corps du rapport ----------------
+
+\input{report/acknowledgement}
+
+\chapter{Introduction}
+\input{report/introduction}
+
+\chapter{Environnement de stage}
+\input{report/jaegerlecoultre}
+
+\chapter{Organisation et méthodes de travail}
+\input{report/organisation}
+
+\chapter{Mise à niveau des outils Intranet}
+\input{report/intranet}
+
+\chapter{Automatisation des tests}
+\input{report/selenium}
+
+\chapter{Activités annexes}
+\input{report/side_activities}
+
+\chapter{Conclusion}
+\input{report/conclusion}
+
+\end{document}
