@@ -1,5 +1,22 @@
+Le module de stage en entreprise en deuxième année de Master en informatique à l'UFR Sciences et Techniques de Besançon représente la dernière période du stagiaire en tant qu'étudiant. Ce stage de fin d'études représente un tremplin vers le monde professionnel et permet d'approfondir les connaissances en entreprise acquises pendant le stage de troisième année de Licence informatique. \\
+
+Ce rapport rend compte des travaux réalisés pendant ces presque six mois de stage au sein de la Manufacture. Nous allons tout d'abord exposer le contexte du stage et les objectifs de ce stage. Ensuite, nous allons vous présenter l'environnement professionnel dans lequel le stage s'est déroulé ainsi que les outils utilisés par le service informatique de la Manufacture. Nous allons ensuite détailler les deux activités principales de mon stage : la migration des applications et l'automatisation des tests, puis revenir sur d'autres activités que j'ai pu réalisé durant ce stage, pour enfin conclure ce rapport.
+
 \section{Contexte du stage}
 
+Ce stage au sein de la Manufacture Jaeger-LeCoultre s'est déroulé du 3 février au 4 juillet. Il a pour but d'achever ma formation dans l'enseignement supérieur afin d'obtenir un diplôme de Master en informatique. Il s'agit aussi de ma première expérience professionnelle à l'étranger, étant donné que la Manufacture est basée au Sentier, dans la Vallée de Joux, en Suisse. \\
+
+Je suis entré en contact avec Monsieur Bosdure lors des Portes Ouvertes de la Manufacture en Octobre 2018. A cette date, je poursuivais ma première année de Master en informatique à Besançon, mais je lui ai tout de même fait part de mon intérêt pour un stage à la Manufacture. Quelques mois plus tard, je fus invité à la Manufacture pour un entretien avec Monsieur Bosdure et Monsieur Gros, responsable des stagiaires dans le service informatique, pour un entretien au sujet de mon stage. \\
+
+C'est à cet entretien que Monsieur Bosdure et Monsieur Gros m'ont exposé mon sujet de stage, qui consiste à migrer les applications hébergées dans un serveur Intranet vers un nouveau serveur utilisant une version de Java plus récente. Les responsables étaient aussi intéressés par une automatisation des tests sur les applications, cette mission a donc aussi été greffée à mon sujet de stage. 
+
 \section{Missions de stage}
+Comme exposé précédemment, mon stage s'orientait autour de deux sujets. Le premier a pour but de migrer les applications présentes sur le serveur Intranet, qui utilise la technologie Java 7 et Tomcat 7, vers les nouveaux serveurs mis en place par le serveur informatique qui utilisent OpenJDK 11 et Tomcat 9. Ce changement s'explique par les nouvelles politiques de \emph{long-term support} d'Oracle. En effet, ce service devient payant depuis la sortie de Java 11. Aussi, à partir de Java 11, Oracle propose deux versions du kit de développement Java, une version OpenJDK sous la licence \emph{open source} GPL\footnote{GNU General Public License, ou licence publique générale GNU} et une version commerciale Oracle JDK sous une licence payante~\cite{JAVA11}. \\
+
+Cette mission consiste donc à effectuer les modifications dans les projets de l'ancien Intranet pour qu'ils puissent s'exécuter sur cette nouvelle version de Java, de vérifier leur bon fonctionnement avec cette nouvelle technologies pour assurer au service informatique une maintenance moindre dans le futur. \\
+
+Le deuxième sujet est axé sur l'automatisation des tests sur les applications de l'Intranet. Jusqu'à aujourd'hui, le service informatique ne disposait de systèmes de tests automatisés lors des différents déploiements des applications. Le risque lié à cette pratique est de perdre certaines fonctionnalités existantes dans l'application lors d'éventuelles modifications. Pour pallier ce problème, l'équipe de développement a décidé de mettre en place une automatisation des tests sur les applications qui rejoindront le nouveau serveur, et sur les prochaines applications à venir.\\
+
+Le principal objectif de ce sujet est de garantir la non-regression des fonctionnalités des applications en cas d'éventuelles modifications dans le futur.
 
 \section{Objectifs du stage}

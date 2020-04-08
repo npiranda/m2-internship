@@ -23,6 +23,7 @@
 \RequirePackage[hidelinks]{hyperref}%Paquet pour insérer légendes dans des sous-figures comme Figure 1a, 1b
 \RequirePackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm]{geometry} %Configuration de la page
 \RequirePackage{changepage}
+\usepackage{lastpage}
 \RequirePackage{url}
 \RequirePackage{pdftricks2}
 \RequirePackage{enumitem}
@@ -47,7 +48,7 @@
 \setlength{\headheight}{2cm}
 \lhead{\includegraphics[scale=0.035]{logos/LOGO UNIV-FC_COULEUR.png}} %Affichage de l'image au top de la page
 \rhead{\includegraphics[scale=0.15]{logos/Jaeger-LeCoultre-logo.png}}
-\rfoot{\thepage}
+\rfoot{\thepage~sur~\pageref{LastPage}}
 \cfoot{\titre}
 \lfoot{\eleves}
 }
