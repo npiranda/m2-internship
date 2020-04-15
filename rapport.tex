@@ -1,6 +1,9 @@
 \documentclass{classeENS}
 \usepackage{lipsum}
 
+%----------- Quelques commandes user ----------
+\newcommand{\TODO}[1]{\textcolor{red}{TODO: #1}}
+%----------------------------------------------
 
 \title{Template rapport ENS } %Titre du fichier
 
@@ -21,6 +24,7 @@
         
 \fairemarges %Afficher les marges
 \fairepagedegarde %Créer la page de garde
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 \tabledematieres %Créer la table de matières
 \tabledefigure
 
